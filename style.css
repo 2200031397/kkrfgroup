@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    padding-top: 60px; /* To account for the fixed navbar */
+}
+
+nav {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+li {
+    margin: 0 20px;
+}
+
+.nav-item {
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-item span {
+    display: inline;
+}
+
+.nav-item:hover span {
+    display: none;
+}
+
+.nav-item#work:hover::before {
+    content: "Hard";
+    color: black;
+}
+
+.nav-item#studios:hover::before {
+    content: "Play Harder";
+    color: black;
+}
+
+.nav-item#recognition:hover::before {
+    content: "Yesh!";
+    color: black;
+}
+
+nav .left-content {
+    margin-right: auto;
+}
+
+.content-container {
+    text-align: left;
+    color: black;
+   
+    font-size: 30px;
+}
+
+
+.vidoesstuff{
+    text-align: center;
+}
+
+.outer-container {
+    display: flex;
+    justify-content: space-between; /* Distribute space between the items */
+    align-items: center; /* Align items vertically at the center */
+    gap: 20px; /* Space between each content block */
+    margin: 20px 0;
+}
+
+
+
+.outer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the start of the container */
+    gap: 20px;
+    margin: 20px 0;
+}
+
+
+
+.hidden-text {
+    display: none; /* Hide text by default */
+}
+
+.vidoesstuff:hover .hidden-text {
+    display: block; /* Show the paragraph on hover */
+}
+
+.stage3{
+    display: flex;
+
+}
+.stage31{
+    width: 50%;
+    text-align: center;
+}
+
+.stage3branding{
+    display: flex;
+    justify-content: space-between;
+}
+
+.stage4inner{
+    display: flex;
+    justify-content: space-between;
+
+}
+
